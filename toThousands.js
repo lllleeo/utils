@@ -2,6 +2,9 @@ function toThousands(str) {
     return str.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+//
+s.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+
 // https://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-money-in-javascript
 Number.prototype.formatMoney = function(c, d, t){
 var n = this, 
